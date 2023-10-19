@@ -29,3 +29,7 @@ void ShowArray(string[] array,int count){
       }
     Console.WriteLine("["+String.Join(";",arrayMult)+"]");
 }
+
+string [] newArray = CreateStringArray(size);
+int count = CountArray(newArray);
+ShowArray(newArray,count);
