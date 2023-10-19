@@ -18,3 +18,14 @@ int CountArray(string[] array){
     }
   return count;
 }
+
+void ShowArray(string[] array,int count){
+  string []arrayMult = new string [count];
+  int j=0;
+    for (int i=0;i<array.Length;i++){
+        if (array[i].Length<=3){
+        arrayMult[j]= new (array[i]);
+        j++;}
+      }
+    Console.WriteLine("["+String.Join(";",arrayMult)+"]");
+}
